@@ -10,7 +10,7 @@ namespace Platformer
         public float jumpForce;
         private float moveInput;
 
-        private bool facingRight = false;
+        private bool facingRight = true;
         [HideInInspector]
         public bool deathState = false;
 
@@ -18,14 +18,14 @@ namespace Platformer
         public Transform groundCheck;
 
         private new Rigidbody2D rigidbody;
-        private Animator animator;
-        private GameManager gameManager;
+        //private Animator animator;
+        //private GameManager gameManager;
 
         void Start()
         {
             rigidbody = GetComponent<Rigidbody2D>();
-            animator = GetComponent<Animator>();
-            gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            //animator = GetComponent<Animator>();
+            //gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         }
 
         private void FixedUpdate()
@@ -40,17 +40,17 @@ namespace Platformer
                 moveInput = Input.GetAxis("Horizontal");
                 Vector3 direction = transform.right * moveInput;
                 transform.position = Vector3.MoveTowards(transform.position, transform.position + direction, movingSpeed * Time.deltaTime);
-                animator.SetInteger("playerState", 1); // Turn on run animation
+                //animator.SetInteger("playerState", 1); // Turn on run animation
             }
             else
             {
-                if (isGrounded) animator.SetInteger("playerState", 0); // Turn on idle animation
+               // if (isGrounded) animator.SetInteger("playerState", 0); // Turn on idle animation
             }
             if(Input.GetKeyDown(KeyCode.Space) && isGrounded )
             {
                 rigidbody.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
             }
-            if (!isGrounded)animator.SetInteger("playerState", 2); // Turn on jump animation
+            //if (!isGrounded)animator.SetInteger("playerState", 2); // Turn on jump animation
 
             if(facingRight == false && moveInput > 0)
             {
@@ -92,7 +92,7 @@ namespace Platformer
         {
             if (other.gameObject.tag == "Coin")
             {
-                gameManager.coinsCounter += 1;
+               // gameManager.coinsCounter += 1;
                 Destroy(other.gameObject);
             }
         }
