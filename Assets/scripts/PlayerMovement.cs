@@ -56,6 +56,6 @@ public class PlayerMovement : MonoBehaviour
     void Jump()
     {
         // Apply vertical force to jump
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+       // rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
     }
 }
