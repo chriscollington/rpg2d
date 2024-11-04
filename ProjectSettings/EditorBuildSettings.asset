@@ -18,20 +18,29 @@ EditorBuildSettings:
     path: Assets/Scenes/east.unity
     guid: da8c5a8cb29941b4e8a2ed92460ca755
   - enabled: 1
-    path: Assets/Scenes/ThemePark.unity
-    guid: 18f09e36ccc9427458482d957f4b975d
-  - enabled: 1
-    path: Assets/Scenes/ThemePark2.unity
-    guid: 5c5cb52989a89204193b3881fcb906e4
-  - enabled: 1
-    path: Assets/Scenes/ThemePark3.unity
-    guid: 47e01c0b34f916543ad339a3a065e6b4
-  - enabled: 1
     path: Assets/Scenes/CutSceneOgre.unity
     guid: 97e7a11a8a345f742b8e9bb92d85064e
   - enabled: 1
     path: Assets/Scenes/west 1.unity
     guid: 4ccf389c9f5e24e4688761981b17a291
+  - enabled: 1
+    path: Assets/Scenes/west 2.unity
+    guid: 12750d038091457419b11bce64059aea
+  - enabled: 1
+    path: Assets/Scenes/west 3.unity
+    guid: 8665d5881af6b8d4e89297fc584c1f03
+  - enabled: 1
+    path: Assets/Scenes/MyScene 1.unity
+    guid: 5e9bbb81ac112814581bf88e1a5c747a
+  - enabled: 0
+    path: Assets/Scenes/ThemePark.unity
+    guid: 18f09e36ccc9427458482d957f4b975d
+  - enabled: 0
+    path: Assets/Scenes/ThemePark2.unity
+    guid: 5c5cb52989a89204193b3881fcb906e4
+  - enabled: 0
+    path: Assets/Scenes/ThemePark3.unity
+    guid: 47e01c0b34f916543ad339a3a065e6b4
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
